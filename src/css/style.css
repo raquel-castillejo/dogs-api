@@ -1,3 +1,13 @@
+:root {
+	/* https://coolors.co/palette/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c */
+	--color-buff: #cb997e;
+	--color-desert-sand: #ddbea9;
+	--color-champagne-pink: #ffe8d6;
+	--color-ash-gray: #b7b7a4;
+	--color-sage: #a5a58d;
+	--color-reseda-green: #6b705c;
+}
+
 *,
 *::after,
 *::before {
@@ -23,7 +33,89 @@ a {
 
 body {
 	margin: 0;
+	background-color: var(--color-champagne-pink);
+
+	font-family: 'Amatic SC', sans-serif;
+	color: var(--color-reseda-green);
 	/* background-image: url(../assets/images/sleep-cat.jpeg); */
+}
+
+.main {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+}
+
+.select-dog-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.dog-breeds-select,
+.dog-subbreeds-select {
+	min-width: 220px;
+
+	background-color: transparent;
+	border: 1.9px solid var(--color-reseda-green);
+	border-radius: 5px;
+
+	padding: 5px 10px;
+
+	font-size: 24px;
+}
+
+.generate-image-button {
+	min-width: 220px;
+
+	background-color: var(--color-reseda-green);
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+
+	color: var(--color-champagne-pink);
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+
+	font-size: 24px;
+}
+
+.dog-images__favs {
+	border: 1px solid blue;
+
+	/* https://www.youtube.com/watch?v=Shp-bamfX_Q */
+	/*
+	display: flex;
+	flex-wrap: wrap;
+	*/
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.dog-images__single-fav {
+	border: 3px solid greenyellow;
+	position: relative;
+}
+
+.dog-images__delete-fav {
+	position: absolute;
+}
+
+.dog-images__delete-fav:hover {
+	cursor: pointer;
 }
 
 .hidden {

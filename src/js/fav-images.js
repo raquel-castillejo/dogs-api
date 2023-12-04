@@ -37,8 +37,8 @@ export const printFavImages = () => {
 		const newFavImage = document.createElement('img');
 		newFavImage.src = fav;
 
-		newFavImageContainer.append(newFavImage);
 		newFavImageContainer.append(deleteFavImage);
+		newFavImageContainer.append(newFavImage);
 		fragment.append(newFavImageContainer);
 	});
 	dogFavImgsContainerElement.append(fragment);

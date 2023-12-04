@@ -4,21 +4,35 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- STYLES -->
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Dog API</title>
 	</head>
 	<body>
 		<main class="main">
-			<h1>Dog Breeds</h1>
-			<div class="select-breed-menu">
-				<select name="dog-breeds" id="dog-breeds-select">
+			<h1 class="title">Dog Breeds</h1>
+			<div class="select-dog-menu">
+				<select
+					name="dog-breeds"
+					id="dog-breeds-select"
+					class="dog-breeds-select"
+				>
 					<option value="default" selected hidden>Select a breed</option>
 				</select>
 				<select
 					name="dog-subbreeds"
 					id="dog-subbreeds-select"
-					class="hidden"
+					class="dog-subbreeds-select hidden"
 				></select>
 			</div>
 			<button id="generate-image" class="generate-image-button">
@@ -32,7 +46,7 @@
 						Add to favourites
 					</button>
 				</div>
-				<div id="dog-images__favs"></div>
+				<div id="dog-images__favs" class="dog-images__favs"></div>
 			</div>
 		</main>
 		<!-- <img src="./assets/images/cute-cat.webp" alt="" /> -->
