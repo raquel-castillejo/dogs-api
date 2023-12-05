@@ -172,25 +172,6 @@ body {
 	border-radius: 7px;
 }
 
-/* .dog-images__delete-fav {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-
-	width: 30px;
-	height: 30px;
-
-	background-color: var(--color-reseda-green);
-	border-radius: inherit;
-	border: 0.5px solid var(--color-champagne-pink);
-
-	font-family: sans-serif;
-	font-weight: 400;
-	color: var(--color-champagne-pink);
-
-	opacity: 0.5;
-} */
-
 .dog-images__delete-fav {
 	position: absolute;
 	right: 10px;
