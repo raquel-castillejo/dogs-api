@@ -2,7 +2,8 @@ import {
 	addToFavImagesButton,
 	dogBreedsSelectElement,
 	dogImageElement,
-	dogSubBreedsSelectElement
+	dogSubBreedsSelectElement,
+	generateImgButtonElement
 } from './dom';
 import { saveFavImage } from './fav-images';
 import { fetchData } from './utils';
@@ -33,8 +34,14 @@ export const generateImage = async () => {
 	if (imageSrc) {
 		dogImageElement.src = imageSrc;
 		dogImageElement.classList.remove('hidden');
+
 		addToFavImagesButton.classList.remove('hidden');
 	}
 
 	addToFavImagesButton.addEventListener('click', saveFavImage);
+};
+
+export const activateGenerateButton = () => {
+	generateImgButtonElement.disabled = false;
+	generateImgButtonElement.addEventListener('click', generateImage);
 };

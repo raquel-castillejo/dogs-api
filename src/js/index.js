@@ -1,8 +1,8 @@
-import { generateImgButtonElement } from './dom';
+import { dogBreedsSelectElement } from './dom';
 import { readLS } from './local-storage';
-import { generateImage } from './random-images';
+import { activateGenerateButton } from './random-images';
 import { printDogBreeds } from './select';
 
 printDogBreeds();
 readLS();
-generateImgButtonElement.addEventListener('click', generateImage);
+dogBreedsSelectElement.addEventListener('change', activateGenerateButton);
